@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+:root {
+  --primary-text-color: #fafafa;
+  --secondary-text-color: #ffd600;
+  --para-text-color: #121212;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+}
+body {
+  color: var(--para-text-color);
+  background-color: #908f8b1d;
+}
+p {
+  color: var(--para-text-color);
+  line-height: 1.4rem;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 800px;
+  color: var(--primary-text-color);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.container {
+  max-width: 1210px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+nav {
+  background-color: #121212;
+  box-shadow: 0 0 4px #bbd0e2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.main-nav {
+  justify-content: space-between;
+  padding: 14px 0;
+}
+.logo {
+  font-size: 42px;
+  color: #fafafa;
+  font-weight: 800;
+}
+.logo span {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--secondary-text-color);
+}
+.nav-links ul {
+  gap: 16px;
+}
+.hover-link {
+  cursor: pointer;
+}
+.hover-link:hover {
+  color: rgb(164, 164, 164);
+}
+.hover-link:active {
+  color: rgb(255, 55, 0);
+}
+.nav-items.active {
+  color: var(--secondary-text-color);
+}
+.search-bar {
+  height: 32;
+  gap: 10px;
+}
+.news-input {
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+}
+.search-btn {
+  font-size: 18px;
+  background-color: var(--accent-color);
+  font-family: "Inconsolata", monospace;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.search-btn:hover {
+  background-color: var(--accent-color-dark);
+}
+main {
+  padding-block: 20px;
+  margin-top: 80px;
+}
+.cards-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: start;
+}
+.card {
+  width: 360px;
+  min-height: 400px;
+  box-shadow: 0px 0px 4px #989898;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 1px 1px 8px #989898;
+  background-color: #f9fdff;
+  transform: translateY(-2px);
+}
+.card-header img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 12px;
+}
+.news-source {
+  margin-block: 12px;
+}
+h4 {
+  color: #5e5e5e;
+}

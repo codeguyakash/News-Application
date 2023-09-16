@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/logo.jpg" type="image/x-icon" />
+    <title>News Application</title>
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reLoad()" class="logo">NEW<span>S</span> </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li
+              class="hover-link nav-items"
+              id="ipl"
+              onclick="onNavClick('ipl')"
+            >
+              IPL
+            </li>
+            <li
+              class="hover-link nav-items"
+              id="finance"
+              onclick="onNavClick('finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="hover-link nav-items"
+              id="technology"
+              onclick="onNavClick('technology')"
+            >
+              Technology
+            </li>
+            <li
+              class="hover-link nav-items"
+              id="politics"
+              onclick="onNavClick('politics')"
+            >
+              Politics
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            type="text"
+            class="news-input"
+            id="news-input"
+            placeholder="eg.Science"
+          />
+          <button class="search-btn" id="search-btn">Search</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-image"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the title</h3>
+          <h4 class="news-source" id="news-source">End Magzine 26/25/6556</h4>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+            eligendi dolores perspiciatis corporis! Repellendus amet odit id!
+            Numquam, obcaecati aliquid.
+          </p>
+        </div>
+      </div>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
