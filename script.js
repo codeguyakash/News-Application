@@ -1,10 +1,10 @@
-const API_KEY = "6703904babf6489589e3f837ca5bb186";
+const API_KEY = "14983010a0a24a729fcf3237a099f84e";
 const url = "https://newsapi.org/v2/everything?q=";
 
 window.addEventListener("load", () => fetchNews("India"));
 function reLoad() {
   window.location.reload();
-//   console.log("first")
+  //   console.log("first")
 }
 
 async function fetchNews(query) {
