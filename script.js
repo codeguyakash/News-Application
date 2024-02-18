@@ -12,10 +12,10 @@ async function fetchNews(query) {
   try {
     const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
     const data = await res.json();
+    bindData(data.articles);
   } catch (error) {
     console.log(error);
   }
-  bindData(data.articles);
 }
 function bindData(articles) {
   const cardsContainer = document.getElementById("cards-container");
