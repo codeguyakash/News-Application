@@ -34,13 +34,14 @@ ul {
   align-items: center;
 }
 .container {
-  max-width: 1210px;
+  max-width: 100%;
   margin-inline: auto;
   overflow: hidden;
 }
 nav {
   background-color: #121212;
   box-shadow: 0 0 4px #bbd0e2;
+  padding: 0 40px;
   position: fixed;
   top: 0;
   left: 0;
@@ -107,10 +108,10 @@ main {
   margin-top: 80px;
 }
 .cards-container {
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  row-gap: 20px;
-  align-items: start;
+  gap: 20px;
+  align-items: center;
 }
 .card {
   width: 360px;

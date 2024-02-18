@@ -1,6 +1,7 @@
-
 const API_KEY = "371e08d5a65b4451bb7a6343d9e518ed";
 const url = "https://newsapi.org/v2/everything?q=";
+// let url;
+// let API_KEY;
 
 window.addEventListener("load", () => fetchNews("India"));
 function reLoad() {
@@ -46,7 +47,12 @@ function fillDataInCard(cardClone, article) {
 
 let curSelectedNav = null;
 
+function get() {
+  console.log("first");
+}
+
 function onNavClick(searchQuery) {
+  return console.log("okk", searchQuery);
   fetchNews(searchQuery);
   const navItem = document.getElementById(searchQuery);
   curSelectedNav?.classList.remove("active");
