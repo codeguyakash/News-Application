@@ -105,9 +105,12 @@ nav {
 }
 main {
   padding-block: 20px;
-  margin-top: 80px;
+  padding: 50px 0;
+  margin-top: 30px;
 }
 .cards-container {
+
+  padding: 50px 0;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
