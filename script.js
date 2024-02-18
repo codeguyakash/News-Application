@@ -9,8 +9,12 @@ function reLoad() {
 }
 
 async function fetchNews(query) {
-  const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
-  const data = await res.json();
+  try {
+    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
+    const data = await res.json();
+  } catch (error) {
+    console.log(error);
+  }
   bindData(data.articles);
 }
 function bindData(articles) {
