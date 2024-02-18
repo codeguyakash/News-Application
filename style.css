@@ -115,7 +115,7 @@ main {
 }
 .card {
   width: 360px;
-  min-height: 400px;
+  min-height: 450px;
   box-shadow: 0px 0px 4px #989898;
   border-radius: 5px;
   cursor: pointer;

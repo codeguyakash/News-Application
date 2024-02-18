@@ -5,13 +5,14 @@ const url = "https://newsapi.org/v2/everything?q=";
 
 window.addEventListener("load", () => fetchNews("India"));
 function reLoad() {
-  window.location.reload();
+  // window.location.reload();
 }
 
 async function fetchNews(query) {
   try {
     const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
     const data = await res.json();
+    if (!data.status === "ok" || data.status === "error") return;
     bindData(data.articles);
   } catch (error) {
     console.log(error);
